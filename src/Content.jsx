@@ -7,7 +7,7 @@ export function Content() {
 
    const handleArticlesIndex = () => {
         axios
-            .get(`https://newsapi.org/v2/everything?q=lego&apiKey=${import.meta.env.VITE_NEWS_API_KEY}`)
+            .get(`http://localhost:3000/news.json?search_terms=lego`)
             .then((response) => {
                 console.log(response.data.articles);
                 setArticles(response.data.articles);
