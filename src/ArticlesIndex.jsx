@@ -2,7 +2,7 @@ export function ArticlesIndex(props) {
   console.log(props.articles);
     return (
       <div>
-        <h1>All Lego Articles</h1>
+        <h1 className="text-4xl font-bold underline text-red-400">All Lego Articles</h1>
         {props.articles.map((article) => (
           <div key={article.title}>
             <h2>{article.title}</h2>

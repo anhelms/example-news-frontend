@@ -5,3 +5,7 @@ html {
 img {
   height: 400px;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
